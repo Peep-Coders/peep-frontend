@@ -14,16 +14,22 @@ import Posts from './components/Posts/Posts';
 
 function App() {
   return (
-    <Navigation />
-    <Routes>
-      <Route index path='/' element={<Home />} />
-      <Route path='/login' element={<Login />} />
-
-    </Routes>
-
-    <Footer />  
-      
-    );
+		<>
+			<Navigation />
+			<Routes>
+				<Route index path='/' element={<Home />} />
+				<Route path='/login' element={<Login />} />
+				<Route path='/about' element={<About />} />
+				<Route path='/comments' element={<Comments />} />
+				<Route path='/header' element={<Header />} />
+				<Route path='/logout' element={<Logout />} />
+				<Route path='/people' element={<People />} />
+				<Route path='/post' element={<Post />} />
+				<Route path='/posts' element={<Posts />} />
+			</Routes>
+			<Footer />
+		</>
+	);
 }
 
 export default App;
