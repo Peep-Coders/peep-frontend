@@ -1,12 +1,22 @@
 import React from 'react';
-//Import React Router Dom
+import Header from '../Header/Header';
+import Posts from '../Posts/Posts';
+
+import { Link } from 'react-router-dom';
 //Import axios or backend interacting part here
 
 function Home(props) {
     return (
         <div>
-            <div className='Home_Container'>
-                <h1 className='Home_Logo_Container'> Pee <span className='Home_Logo_P_Span'>P</span> </h1>
+            <div>
+                <Header></Header>
+                <nav>
+                    <Link to="../Login"> Login </Link>
+                    <Link to="../About"> About </Link>
+                    <Link to="../People"> People </Link>
+                </nav>
+                <Posts></Posts>
+                <footer></footer>
             </div>
         </div>
     );
