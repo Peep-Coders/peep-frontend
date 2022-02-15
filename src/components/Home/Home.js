@@ -9,7 +9,6 @@ function Home(props) {
     return (
         <div>
             <div>
-                <Post></Post>
                 <Posts></Posts>
             </div>
         </div>
