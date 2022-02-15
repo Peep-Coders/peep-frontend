@@ -6,10 +6,15 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Home></Home>
-    </div>
-  );
+		<div>
+			<body>
+				<Home/>
+			</body>
+      <footer>
+        <Footer/>
+      </footer>
+		</div>
+	);
 }
 
 export default App;
