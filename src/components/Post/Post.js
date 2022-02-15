@@ -9,8 +9,9 @@ function Post(props) {
 
 useEffect(()=>{
     getUsers();
-});
+}, []);
 
+//getting user function from PeeP API
 const getUsers = async () => {
     try {
         //change fetch request path to localhost:3001/posts/Post
@@ -25,6 +26,7 @@ const getUsers = async () => {
 
     return (
         <div>
+            {/* Form Handle Submit, LOT GOING ON WITH FORM */}
             <ul>
                 <li>{users}</li>
                 <li>{users}</li>
