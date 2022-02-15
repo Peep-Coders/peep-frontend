@@ -3,10 +3,13 @@ import React from 'react';
 import axios from 'axios'
 import { useEffect, useState } from 'react';
 
-
 function Post(props) {
     //State variable to hold list of users
     const [users, setUsers] = useState([]);
+
+useEffect(()=>{
+    getUsers();
+});
 
 const getUsers = async () => {
     try {
@@ -22,7 +25,11 @@ const getUsers = async () => {
 
     return (
         <div>
-            
+            <ul>
+                <li>{users}</li>
+                <li>{users}</li>
+                <li>{users}</li>
+            </ul>
         </div>
     );
 }
