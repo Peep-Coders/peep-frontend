@@ -1,15 +1,16 @@
-import React, { useReducer, useState } from 'react';
+import React, { useState, useContext, useRef } from 'react';
 import styles from './Login.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
+import { UserContext } from '../../context/userContext';
 
 
 function Login(props) {
-	
+	const [userContext, setUserContext] = useContext(UserContext);
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
-	const togglePass = useref(null);
+	const togglePass = useRef(null);
 	const navigate = useNavigate();
 	const [user, setUser] = useState({
 		email: '',
@@ -65,6 +66,7 @@ function Login(props) {
 						autoComplete='off'
 					/>
 					<label htmlFor='password'>Password:</label>
+					<div>
 					<input
 						id='password'
 						type='text'
@@ -75,7 +77,8 @@ function Login(props) {
 					<button type='button' onClick={showPassword}>
 						<AiFillEye />
 					</button>
-					{errMsg ? <p className={styles.errMsg}>{errMsg}</p> : ''}
+					</div>
+					{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
 					<button>
 						<h4>Login</h4>
 					</button>
