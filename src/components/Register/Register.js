@@ -17,7 +17,7 @@ function Register(props) {
 		});
 		const handleRegistered = () => {
 			axios
-				.post('https://polar-river-02223.herokuapp.com/api/signup', registered)
+				.post('https://polar-river-02223.herokuapp.com/token/signup', registered)
 				.then((res) => {
 					navigate('/login');
 				});

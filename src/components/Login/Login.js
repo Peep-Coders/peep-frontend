@@ -3,11 +3,11 @@ import styles from './Login.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
-import { UserContext } from '../../context/userContext';
-
+// import { UserContext } from '../../context/UserContext';
+// 
 
 function Login(props) {
-	const [userContext, setUserContext] = useContext(UserContext);
+	const [userLogin, setUserLogin] = useState(null)
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
 	const togglePass = useRef(null);
@@ -19,19 +19,20 @@ function Login(props) {
 	});
 	const handleLogin = () => {
 		axios
-		.post('https://polar-river-02223.herokuapp.com/api/signin', user)
+		.post('https://polar-river-02223.herokuapp.com/token/login', user)
 		.then((res) => {
 			if (res.data === 'The provided username or password is incorrect') {
 				setErrMessage(res.data);
 			}
 			if (res.data !== 'The provided username or password is incorrect') {
-				setUserContext((user) => {
+				setUserLogin((user) => {
 					navigate('/');
 					return { ...user, token: res.data.token }
 				});
 			}
 		});
 	};
+
 
 	const handleSubmit = (event) => {
 		event.preventDefault();

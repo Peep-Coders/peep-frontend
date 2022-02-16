@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Comments(props) {
+function Post(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Comments(props) {
     );
 }
 
-export default Comments;
+export default Post;
