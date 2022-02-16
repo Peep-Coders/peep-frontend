@@ -10,7 +10,6 @@ const getPostsIndex = async () => {
             const response = await fetch(API_URL + 'peep/');
             if (response.status === 200) {
                 const data = await response.json();
-                console.log(data)
                 setPosts(data);
             }
         }
@@ -35,7 +34,7 @@ useEffect(() => {
 };
 
 
-
+    // for handling the data if none 
     // if (!posts.length) {
     //     return null; 
     // }   
