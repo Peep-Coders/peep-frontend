@@ -5,10 +5,13 @@ import axios from 'axios';
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { UserContext } from '../../context/UserContext';
 >>>>>>> 9e9b494 (new pull request)
 =======
+=======
+>>>>>>> 8503c5d (Posts view all sample posts)
 =======
 import { UserContext } from '../../context/UserContext';
 >>>>>>> 9e316dd (frontend for making post with images)
@@ -25,7 +28,11 @@ function Login(props) {
 
 function Login(props) {
 	const [userLogin, setUserLogin] = useState(null)
+<<<<<<< HEAD
 >>>>>>> 033f51a (display login form)
+=======
+>>>>>>> 1c00120 (Posts view all sample posts)
+>>>>>>> 8503c5d (Posts view all sample posts)
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
 	const togglePass = useRef(null);
@@ -63,7 +70,11 @@ function Login(props) {
 				});
 			}
 		});
+<<<<<<< HEAD
 >>>>>>> 033f51a (display login form)
+=======
+>>>>>>> 1c00120 (Posts view all sample posts)
+>>>>>>> 8503c5d (Posts view all sample posts)
 	};
 
 

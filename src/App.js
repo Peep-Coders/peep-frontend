@@ -10,19 +10,25 @@ import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import PostDetails from './components/PostDetails/PostDetails'
 import Posts from './components/Posts/Posts';
 import Register from './components/Register/Register';
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 8503c5d (Posts view all sample posts)
 import Register from './components/Register/Register';
-// import Post from './components/Post/Post';
+import Post from './components/Post/Post';
 import PostDetails from './components/PostDetails/PostDetails';
+<<<<<<< HEAD
 =======
 import PostDetails from './components/PostDetails/PostDetails'
 import Posts from './components/Posts/Posts';
 >>>>>>> 9e316dd (frontend for making post with images)
 >>>>>>> 51fe654 (frontend for making post with images)
+=======
+>>>>>>> 8503c5d (Posts view all sample posts)
 
 function App() {
   return (
@@ -37,6 +43,7 @@ function App() {
 				<Route path='/logout' element={<Logout />} />
 				<Route path='/people' element={<People />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<Route path='/postdetails' element={<PostDetails/>} />
 				<Route path='/posts' element={<Posts />} />
 =======
@@ -48,6 +55,10 @@ function App() {
 				<Route path='/posts' element={<Posts />} />
 >>>>>>> 9e316dd (frontend for making post with images)
 >>>>>>> 51fe654 (frontend for making post with images)
+=======
+				<Route path='/postdetails' element={<PostDetails/>} />
+				<Route path='/posts' element={<Posts />} />
+>>>>>>> 8503c5d (Posts view all sample posts)
 			</Routes>
 			<Footer />
 		</>
