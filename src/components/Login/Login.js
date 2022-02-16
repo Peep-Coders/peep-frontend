@@ -3,7 +3,7 @@ import styles from './Login.module.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
-import { UserContext } from '../../context/userContext';
+import { UserContext } from '../../context/UserContext';
 
 
 function Login(props) {

@@ -25,7 +25,7 @@ useEffect(() => {
         {posts.map((post) => {
             return (
                 <div>
-                    <h1>Hello {post}</h1>
+                    <h1>Hello {posts[0].post}</h1>
                 </div>
             );
         })}

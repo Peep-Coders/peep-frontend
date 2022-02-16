@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
@@ -10,13 +9,12 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
-import Post from './components/Post/Post';
+import PostDetails from './components/PostDetails/PostDetails'
 import Posts from './components/Posts/Posts';
 
 function App() {
   return (
 		<>
-			<Navigation />
 			<Routes>
 				<Route index path='/' element={<Home />} />
 				<Route path='/login' element={<Login />} />
@@ -25,28 +23,12 @@ function App() {
 				<Route path='/header' element={<Header />} />
 				<Route path='/logout' element={<Logout />} />
 				<Route path='/people' element={<People />} />
-				<Route path='/post' element={<Post />} />
+				<Route path='/postdetails' element={<PostDetails/>} />
 				<Route path='/posts' element={<Posts />} />
 			</Routes>
 			<Footer />
 		</>
 	);
-=======
-import Home from './components/Home/Home';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Posts from './components/Posts/Posts';
-import './App.css';
-import { Routes, Route, useLocation } from 'react-router-dom';
-
-function App() {
-  return (
-    <div>
-      <Home></Home>
-      <Posts></Posts>
-    </div>
-  );
->>>>>>> 812eabd (frontend connected to backend)
 }
 
 export default App;
