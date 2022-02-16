@@ -11,6 +11,7 @@ import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import PostDetails from './components/PostDetails/PostDetails'
 import Posts from './components/Posts/Posts';
 import Register from './components/Register/Register';
@@ -29,6 +30,21 @@ import Posts from './components/Posts/Posts';
 >>>>>>> 51fe654 (frontend for making post with images)
 =======
 >>>>>>> 8503c5d (Posts view all sample posts)
+=======
+import Register from './components/Register/Register';
+import Post from './components/Post/Post';
+import PostDetails from './components/PostDetails/PostDetails';
+=======
+<<<<<<< HEAD
+import PostDetails from './components/PostDetails/PostDetails'
+import Posts from './components/Posts/Posts';
+=======
+import Register from './components/Register/Register';
+import Posts from './components/Posts/Posts';
+import PostDetails from './components/PostDetails/PostDetails';
+>>>>>>> 6f6b76e (front end image and description submit)
+>>>>>>> c373893 (front end image and description submit)
+>>>>>>> 3dff65f (front end image and description submit)
 
 function App() {
   return (
