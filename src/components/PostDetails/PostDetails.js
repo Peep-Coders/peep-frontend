@@ -37,31 +37,5 @@ const PostDetails = ({
     );
 };
 
-    // const [post, setPost] = useState(null);
-
-    // function PostForm (handleSubmit, formData, handleChange, handleFileUpload, error) {
-
-    // }
-
-    // const getPostDetail = async () => {
-    //     try {
-    //         const response = await fetch(API_URL + 'peep/1/')
-    //         const data = await response.json
-    //         console.log(data);
-    //         if (response.status === 200) {
-    //             setPost(data);
-    //         }
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // };
-    // useEffect(() => {
-    //     getPostDetail();
-    // }, []);
-
-    // if (!post) {
-    //     return null; 
-    // }
- 
 
 export default PostDetails;
