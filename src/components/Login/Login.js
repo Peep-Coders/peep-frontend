@@ -2,6 +2,7 @@ import React, { useState, useContext, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
+import { UserContext } from '../../context/UserContext';
 
 // Styles
 import styles from './Login.module.css';

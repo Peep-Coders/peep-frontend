@@ -9,6 +9,13 @@
     "axios": "^0.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "react-icon": "^1.0.0",
+=======
+>>>>>>> 9e9b494 (new pull request)
+>>>>>>> 7204274 (new pull request)
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
