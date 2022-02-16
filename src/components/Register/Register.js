@@ -8,43 +8,44 @@ import axios from 'axios';
 import { AiFillEye } from 'react-icons/ai';
 
 function Register(props) {
-        const togglePass = useRef(null);
-		const [showPass, setShowPass] = useState(false);
-		const navigate = useNavigate();
-		const [registered, setRegistered] = useState({
-			email: '',
-			password: '',
-		});
-		const handleRegistered = () => {
-			axios
-				.post('https://polar-river-02223.herokuapp.com/token/signup', registered)
-				.then((res) => {
-					navigate('/login');
-				});
-		};
-		const handleSubmit = (event) => {
-			event.preventDefault();
-			handleRegistered();
-		};
-		const handleChange = (event) => {
-			setRegistered({ ...registered, [event.target.id]: event.target.value });
-		};
-		const showPassword = () => {
-			if (showPass) {
-				togglePass.current.attributes['1'].value = 'text';
-			}
-			if (!showPass) {
-				togglePass.current.attributes['1'].value = 'password';
-			}
-			setShowPass(!showPass);
-		};
+	const togglePass = useRef(null);
+	const [showPass, setShowPass] = useState(false);
+	const navigate = useNavigate();
+	const [registered, setRegistered] = useState({
+		email: '',
+		username: '',
+		password: '',
+		re_password: '',
+	});
+	const handleRegistered = () => {
+		axios
+			.post('https://polar-river-02223.herokuapp.com/users/', registered)
+			.then((res) => {
+				navigate('/login');
+			});
+	};
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		handleRegistered();
+	};
+	const handleChange = (event) => {
+		setRegistered({ ...registered, [event.target.id]: event.target.value });
+	};
+	const showPassword = () => {
+		if (showPass) {
+			togglePass.current.attributes['1'].value = 'text';
+		}
+		if (!showPass) {
+			togglePass.current.attributes['1'].value = 'password';
+		}
+		setShowPass(!showPass);
+	};
 	return (
 		<div>
 			<div>
-				<div className={styles.bgContainer}></div>
 				<h3>Register Your Account</h3>
-				<div className={styles.textContainer}>
-					<form className={styles.form} onSubmit={handleSubmit}>
+				<div>
+					<form onSubmit={handleSubmit}>
 						<label htmlFor='email'>Email:</label>
 						<input
 							id='email'
@@ -55,7 +56,7 @@ function Register(props) {
 							autoComplete='off'
 						/>
 						<label htmlFor='password'>Password:</label>
-						<div className={styles.passwordDiv}>
+						<div>
 							<input
 								ref={togglePass}
 								id='password'
@@ -73,14 +74,10 @@ function Register(props) {
 								<AiFillEye />
 							</button>
 						</div>
-						<button className={styles.loginBtn} type='submit'>
-							Register
-						</button>
-						<span className={styles.registerText}>
+						<button type='submit'>Register</button>
+						<span>
 							Already have an account?&nbsp;
-							<Link to='/login' className={styles.registerBtn}>
-								Login
-							</Link>
+							<Link to='/login'>Login</Link>
 							&nbsp;now!
 						</span>
 					</form>

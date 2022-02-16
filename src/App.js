@@ -9,8 +9,9 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
-import Post from './components/Post/Post';
-import Posts from './components/Posts/Posts';
+import Register from './components/Register/Register';
+// import Post from './components/Post/Post';
+import PostDetails from './components/PostDetails/PostDetails';
 
 function App() {
   return (
@@ -19,13 +20,14 @@ function App() {
 			<Routes>
 				<Route index path='/' element={<Home />} />
 				<Route path='/login' element={<Login />} />
+				<Route path='/register' element={<Register />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/comments' element={<Comments />} />
 				<Route path='/header' element={<Header />} />
 				<Route path='/logout' element={<Logout />} />
 				<Route path='/people' element={<People />} />
-				<Route path='/post' element={<Post />} />
-				<Route path='/posts' element={<Posts />} />
+				{/* <Route path='/post' element={<Post />} /> */}
+				<Route path='/postDetails' element={<PostDetails />} />
 			</Routes>
 			<Footer />
 		</>
