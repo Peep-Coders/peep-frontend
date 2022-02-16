@@ -1,3 +1,48 @@
-.textContainer {
-    
+.start_grid {
+    transition: 2s;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: .5fr 1fr .5fr;
+    border-left: 9px solid red;
+}
+
+.login_h3 {
+    justify-self: center;
+    align-content: center;
+    flex-basis: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+.form_label {
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+.login_button {
+    margin: 10px 0 10px 0;
+    border: 0 solid oldlace;
+    background-color: oldlace;
+    height: 50px;
+    width: 100%;
+}
+
+.login_button:hover {
+    background-color: rgb(255, 239, 209);
+}
+
+.eye_button {
+    border: 0;
+    margin: 0 0 0 5px;
+    padding: 3px;
 }

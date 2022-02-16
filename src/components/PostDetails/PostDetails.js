@@ -1,7 +1,7 @@
 import React from 'react';
 import API_URL from '../../apiConfig';
 
-function Post(props) {
+function PostDetails(props) {
     //State variable to hold list of users
 
 // useParams to hold post parameter for fetch request
@@ -19,4 +19,4 @@ function Post(props) {
     );
 }
 
-export default Post;
+export default PostDetails;
