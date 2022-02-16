@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { UserContext } from '../../context/UserContext';
 >>>>>>> 9e9b494 (new pull request)
@@ -12,6 +13,13 @@ import styles from './Login.module.css';
 
 function Login(props) {
 	const [userLogin, setUserLogin] = useState(null);
+=======
+// import { UserContext } from '../../context/UserContext';
+// 
+
+function Login(props) {
+	const [userLogin, setUserLogin] = useState(null)
+>>>>>>> 033f51a (display login form)
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
 	const togglePass = useRef(null);
@@ -23,6 +31,7 @@ function Login(props) {
 	});
 	const handleLogin = () => {
 		axios
+<<<<<<< HEAD
 			.post('https://polar-river-02223.herokuapp.com/token/login', user)
 			.then((res) => {
 				if (res.data === 'The provided username or password is incorrect') {
@@ -35,7 +44,22 @@ function Login(props) {
 					});
 				}
 			});
+=======
+		.post('https://polar-river-02223.herokuapp.com/token/login', user)
+		.then((res) => {
+			if (res.data === 'The provided username or password is incorrect') {
+				setErrMessage(res.data);
+			}
+			if (res.data !== 'The provided username or password is incorrect') {
+				setUserLogin((user) => {
+					navigate('/');
+					return { ...user, token: res.data.token }
+				});
+			}
+		});
+>>>>>>> 033f51a (display login form)
 	};
+
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
