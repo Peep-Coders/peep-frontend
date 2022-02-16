@@ -10,6 +10,7 @@ function Home(props) {
     return (
         <div>
             <div>
+                <Navigation></Navigation>
                 <PostDetails></PostDetails>
                 <Posts></Posts>
             </div>
