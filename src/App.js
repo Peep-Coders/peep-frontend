@@ -10,7 +10,7 @@ import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
 import Post from './components/Post/Post';
-import Posts from './components/Posts/Posts';
+import PostDetails from './components/Posts/PostDetails';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
 				<Route path='/logout' element={<Logout />} />
 				<Route path='/people' element={<People />} />
 				<Route path='/post' element={<Post />} />
-				<Route path='/posts' element={<Posts />} />
+				<Route path='/postDetails' element={<PostDetails />} />
 			</Routes>
 			<Footer />
 		</>
