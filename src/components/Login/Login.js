@@ -4,9 +4,15 @@ import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import { UserContext } from '../../context/UserContext';
 >>>>>>> 9e9b494 (new pull request)
+=======
+=======
+import { UserContext } from '../../context/UserContext';
+>>>>>>> 9e316dd (frontend for making post with images)
+>>>>>>> 51fe654 (frontend for making post with images)
 
 // Styles
 import styles from './Login.module.css';

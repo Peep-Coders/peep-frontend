@@ -11,9 +11,15 @@
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-icon": "^1.0.0",
 =======
 >>>>>>> 9e9b494 (new pull request)
+=======
+=======
+    "react-icon": "^1.0.0",
+>>>>>>> 9e316dd (frontend for making post with images)
+>>>>>>> 51fe654 (frontend for making post with images)
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
