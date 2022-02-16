@@ -9,14 +9,9 @@ import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
-<<<<<<< HEAD
 import PostDetails from './components/PostDetails/PostDetails'
 import Posts from './components/Posts/Posts';
-=======
 import Register from './components/Register/Register';
-import Posts from './components/Posts/Posts';
-import PostDetails from './components/PostDetails/PostDetails';
->>>>>>> 6f6b76e (front end image and description submit)
 
 function App() {
   return (
