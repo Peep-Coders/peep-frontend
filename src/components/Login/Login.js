@@ -19,7 +19,7 @@ function Login(props) {
 	});
 	const handleLogin = () => {
 		axios
-		.post('https://polar-river-02223.herokuapp.com/api/signin', user)
+		.post('https://polar-river-02223.herokuapp.com/token/login', user)
 		.then((res) => {
 			if (res.data === 'The provided username or password is incorrect') {
 				setErrMessage(res.data);
