@@ -1,0 +1,25 @@
+.nav_button {
+    background-color: rgb(82, 43, 224);
+    border: 0;
+    margin: 0 3px;
+    height: 40px;
+    width: 80px;
+    border-radius: 6%;
+    
+    /* border-bottom: 2px solid black; */
+}
+.nav_bar {
+    display: inline;
+    background-color: rgb(178, 180, 28);
+    
+}
+.btnContainer {
+    margin-left: 60%;
+    
+
+}
+.linktag {
+    text-decoration: none;
+    color: whitesmoke;
+   
+}
