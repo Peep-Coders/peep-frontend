@@ -1,6 +1,7 @@
 import React from 'react';
 import Posts from '../Posts/Posts';
-import Post from '../Post/Post';
+import PostDetails from '../PostDetails/PostDetails';
+import Navigation from '../Navigation/Navigation';
 
 function Home(props) {
 
@@ -9,7 +10,8 @@ function Home(props) {
     return (
         <div>
             <div>
-                <Post></Post>
+                <Navigation></Navigation>
+                <PostDetails></PostDetails>
                 <Posts></Posts>
             </div>
         </div>

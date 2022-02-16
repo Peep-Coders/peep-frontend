@@ -1,13 +1,45 @@
-import React from 'react';
+import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import API_URL from '../../apiConfig';
 
-function Posts(props) {
+const Posts = ({ loggedin }) => {
+    const [ posts, setPosts ] = useState([]);
+
+const getPostsIndex = async () => {
+        try {
+            const response = await fetch(API_URL + 'peep/');
+            if (response.status === 200) {
+                const data = await response.json();
+                console.log(data)
+                setPosts(data);
+            }
+        }
+        catch (error) {}
+    }
+
+useEffect(() => {
+    getPostsIndex();
+}, []);
+
     return (
-        <div>
-            <h1>Faketh Post #Helloworld 1</h1>
-            <h1>Faketh Post #Helloworld 2</h1>
-            <h1>Faketh Post #Helloworld 3</h1>
-        </div>
+    <div>
+        {posts.map((post) => {
+            return (
+                <div>
+                    <h1>Hello {post}</h1>
+                </div>
+            );
+        })}
+    </div>
     );
-}
+};
+
+
+
+    // if (!posts.length) {
+    //     return null; 
+    // }   
+
+
 
 export default Posts;
