@@ -18,6 +18,7 @@ function App() {
 			<Routes>
 				<Route index path='/' element={<Home />} />
 				<Route path='/login' element={<Login />} />
+				<Route path='/register' element={<Register />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/comments' element={<Comments />} />
 				<Route path='/header' element={<Header />} />

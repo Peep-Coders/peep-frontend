@@ -25,11 +25,7 @@ useEffect(() => {
         {posts.map((post) => {
             return (
                 <div>
-<<<<<<< HEAD
                     <h1>Hello {posts[0].post}</h1>
-=======
-                    <h1>Hello</h1>
->>>>>>> 033f51a (display login form)
                 </div>
             );
         })}
