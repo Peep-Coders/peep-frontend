@@ -58,9 +58,9 @@ function Login(props) {
 				<h3 className={styles.login_h3}>Login To Your Account</h3>
 				<div className={styles.login_main}>
 					<form onSubmit={handleSubmit} className={styles.login_form}>
-						<label htmlFor='email' className={styles.form_label}>
+						{/* <label htmlFor='email' className={styles.form_label}>
 							Email:
-						</label>
+						</label> */}
 						<input
 							className={styles.login_input}
 							id='email'
@@ -69,23 +69,23 @@ function Login(props) {
 							onChange={handleChange}
 							autoComplete='off'
 						/>
-						<label htmlFor='password' className={styles.form_label}>
+						{/* <label htmlFor='password' className={styles.form_label}>
 							Password:
-						</label>
+						</label> */}
 						<div>
 							<input
 								id='password'
-								type='text'
+								type='password'
 								placeholder='password'
 								onChange={handleChange}
 								autoComplete='off'
 							/>
-							<button
+							{/* <button
 								type='button'
 								onClick={showPassword}
 								className={styles.eye_button}>
 								<AiFillEye />
-							</button>
+							</button> */}
 						</div>
 						{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
 						<button className={styles.login_button}>

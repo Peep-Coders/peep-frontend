@@ -41,13 +41,16 @@ function Register(props) {
 		setShowPass(!showPass);
 	};
 	return (
-		<div>
-			<div>
-				<h3>Register Your Account</h3>
-				<div>
+		<div className={styles.start_grid}>
+			<div className={styles.login}>
+				<h3 className={styles.login_h3}>Register Your Account</h3>
+				<div className={styles.login_main}>
 					<form onSubmit={handleSubmit}>
-						<label htmlFor='email'>Email:</label>
+						{/* <label htmlFor='email' className={styles.login_form}>
+							Email:
+						</label> */}
 						<input
+							className={styles.login_input}
 							id='email'
 							type='email'
 							value={registered.email}
@@ -55,7 +58,9 @@ function Register(props) {
 							onChange={handleChange}
 							autoComplete='off'
 						/>
-						<label htmlFor='password'>Password:</label>
+						{/* <label htmlFor='password' className={styles.form_label}>
+							Password:
+						</label> */}
 						<div>
 							<input
 								ref={togglePass}
@@ -67,19 +72,21 @@ function Register(props) {
 								onChange={handleChange}
 								autoComplete='off'
 							/>
-							<button
+							{/* <button
 								type='button'
 								onClick={showPassword}
-								className={styles.toggleEye}>
+								className={styles.eye_button}>
 								<AiFillEye />
-							</button>
+							</button> */}
 						</div>
-						<button type='submit'>Register</button>
-						<span>
-							Already have an account?&nbsp;
-							<Link to='/login'>Login</Link>
-							&nbsp;now!
-						</span>
+						<button type='submit' className={styles.login_button}>
+							<h4>Register</h4>
+						</button>
+							<p>
+								Already have an account?&nbsp;
+								<Link to='/login'>Login</Link>
+								&nbsp;now!
+							</p>
 					</form>
 				</div>
 			</div>
