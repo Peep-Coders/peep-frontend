@@ -1,17 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .img {
 	object-fit: fill;
 	border-radius: 35%;
-	height: 250px;
-	width: 250px;
+	height: 150px;
+	width: 150px;
 }
 
-.linkedin_container {
+.container_row1 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
 }
 
+.container_row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
 .img:hover {
-    opacity: .75;
+    height: 250px;
+    width: 250px;
     transition: 1s;
 }
+
+.github_link {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.img_git {
+    object-fit: fill;
+	border-radius: 35%;
+	height: 50px;
+	width: 50px;
+    transition: 1s;
+}
+
+.img_git:hover {
+    object-fit: fill;
+	border-radius: 35%;
+	height: 100px;
+	width: 100px;
+}
+
+
+@media (max-width: 400px) {
+    .img {
+	object-fit: fill;
+	border-radius: 35%;
+	height: 50px;
+	width: 50px;
+    }
+} 

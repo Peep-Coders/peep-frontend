@@ -1,25 +1,32 @@
 .nav_button {
     background-color: rgb(82, 43, 224);
     border: 0;
-    margin: 0 3px;
-    height: 40px;
-    width: 80px;
-    border-radius: 6%;
+    margin: 0px 3px;
+    margin-left: 10px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
     
     /* border-bottom: 2px solid black; */
 }
-.nav_bar {
-    display: inline;
-    background-color: rgb(178, 180, 28);
-    
-}
-.btnContainer {
-    margin-left: 60%;
-    
 
+.nav_button:hover{
+    opacity: .5;
+    transition: .25s;
 }
+
+.nav_bar {
+    display: flex;
+    background-color: rgb(178, 180, 28);
+    justify-content: end;
+    margin-right: 15px;
+}
+
 .linktag {
     text-decoration: none;
     color: whitesmoke;
-   
+}
+
+.btnContainer {
+    margin-right: 25px;
 }
