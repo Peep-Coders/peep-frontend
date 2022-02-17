@@ -14,23 +14,29 @@ import Register from './components/Register/Register';
 import PostDetails from './components/PostDetails/PostDetails';
 
 function App() {
-  return (
-		<>
-			<Navigation />
-			<Routes>
-				<Route index path='/' element={<Home />} />
-				<Route path='/login' element={<Login />} />
-				<Route path='/register' element={<Register />} />
-				<Route path='/about' element={<About />} />
-				<Route path='/comments' element={<Comments />} />
-				<Route path='/header' element={<Header />} />
-				<Route path='/logout' element={<Logout />} />
-				<Route path='/people' element={<People />} />
-				{/* <Route path='/post' element={<Post />} /> */}
-				<Route path='/postDetails' element={<PostDetails />} />
-			</Routes>
-			<Footer />
-		</>
+	return (
+		<div className='home_container'>
+			<nav>
+				<Navigation />
+			</nav>
+			<body>
+				<Routes>
+					<Route index path='/' element={<Home />} />
+					<Route path='/login' element={<Login />} />
+					<Route path='/register' element={<Register />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/comments' element={<Comments />} />
+					<Route path='/header' element={<Header />} />
+					<Route path='/logout' element={<Logout />} />
+					<Route path='/people' element={<People />} />
+					{/* <Route path='/post' element={<Post />} /> */}
+					<Route path='/postDetails' element={<PostDetails />} />
+				</Routes>
+			</body>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
 	);
 }
 
