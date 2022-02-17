@@ -1,22 +1,39 @@
-import React from 'react';
+// import { useState, useEffect } from 'react';
+import { Form, Button, Alert, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API_URL from '../../apiConfig';
 
-function Post(props) {
-    //State variable to hold list of users
-
-// useParams to hold post parameter for fetch request
-
-//getting user function from PeeP API
+const PostDetails = ({
+    handleSubmit,
+    formData,
+    handleChange,
+    handleFileUpload,
+    error,
+}) => {
     return (
         <div>
-            {/* Form Handle Submit, LOT GOING ON WITH FORM */}
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <Form onSubmit={handleSubmit} encType='multipart/form-data'>
+                <Form.Group controlId='Description'>
+                    <Form.Label>Description</Form.Label>
+                    <Form.Control required autoFocus type='text' name='name'/>
+                </Form.Group> 
+                <Form.Group controlId='photo'>
+                    <Form.Control
+                        type='file'
+                        name='photo'
+                        accept='image/*'
+                        onChange={handleFileUpload}></Form.Control>
+                </Form.Group>
+                <Button className='mt-4' type='submit' disabled={error}>
+                    Submit
+                </Button>
+                {error && (
+                    <Alert variant='danger'>
+                        Error, Try again! 
+                    </Alert>
+                )}
+            </Form>
         </div>
     );
-}
+};
 
-export default Post;
+export default PostDetails;
