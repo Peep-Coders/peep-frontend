@@ -13,7 +13,7 @@ const PostDetails = ({
         <div>
             <Form onSubmit={handleSubmit} encType='multipart/form-data'>
                 <Form.Group controlId='Description'>
-                    <Form.Label>Description</Form.Label>
+                    <Form.Label>Post Description</Form.Label>
                     <Form.Control required autoFocus type='text' name='name'/>
                 </Form.Group> 
                 <Form.Group controlId='photo'>

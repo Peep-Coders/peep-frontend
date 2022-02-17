@@ -18,7 +18,7 @@ function Navigation(props) {
 							People{' '}
 						</Link>
 					</button>
-					<button className={styles.nav_button}>
+					<button className={styles.nav_button} >
 						<Link to='../About' className={styles.linktag}>
 							{' '}
 							About{' '}
