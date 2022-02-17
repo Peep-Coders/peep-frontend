@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+}
+
+.footerDiv {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly;
+	margin: 10px 0px 10px 0px;
+}
+
+.footerImg {
+	object-fit: fill;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}

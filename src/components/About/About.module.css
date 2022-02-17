@@ -1,0 +1,17 @@
+.img {
+	object-fit: fill;
+	border-radius: 35%;
+	height: 250px;
+	width: 250px;
+}
+
+.linkedin_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.img:hover {
+    opacity: .75;
+    transition: 1s;
+}
