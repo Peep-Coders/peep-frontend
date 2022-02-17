@@ -7,7 +7,11 @@ function Footer(props) {
 =======
 >>>>>>> 009a50f (Fixed Folders)
 	return (
+<<<<<<< HEAD
 		<div className={styles.footer_container}>
+=======
+		<div className={styles.footerContainer}>
+>>>>>>> 7088207 (done)
 			<span> PEEP &copy; | Created by PeepTeam </span>
 		</div>
 	);
