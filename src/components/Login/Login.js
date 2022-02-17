@@ -6,7 +6,8 @@ import axios from 'axios';
 // Styles
 import styles from './Login.module.css';
 
-function Login(props) {
+function Login({ UserLogout }) {
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	const [userLogin, setUserLogin] = useState(null);
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
@@ -88,7 +89,7 @@ function Login(props) {
 							</button>
 						</div>
 						{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
-						<button className={styles.login_button}>
+						<button className={styles.login_button} onClick={() => setIsLoggedIn(true)} > {isLoggedIn ? 'Logout' : 'Login'}
 							<h4>Login</h4>
 						</button>
 						<p className={styles.login_text}>
