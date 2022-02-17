@@ -6,12 +6,6 @@ function Navigation(props) {
     return (
 			<div className={styles.nav_bar}>
 				<div className={styles.btnContainer}>
-					<button className={styles.nav_button}>
-						<Link to='../Login' className={styles.linktag}>
-							{' '}
-							Login{' '}
-						</Link>
-					</button>
 					<button className={styles.nav_button} >
 						<Link to='../' className={styles.linktag}>
 							{' '}
@@ -28,6 +22,12 @@ function Navigation(props) {
 						<Link to='../About' className={styles.linktag}>
 							{' '}
 							About{' '}
+						</Link>
+					</button>
+					<button className={styles.nav_button}>
+						<Link to='../Login' className={styles.linktag}>
+							{' '}
+							Login{' '}
 						</Link>
 					</button>
 				</div>

@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import About from './components/About/About';
 import Comments from './components/Comments/Comments';
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Logout from './components/Logout/Logout';
@@ -26,7 +25,6 @@ function App() {
 					<Route path='/register' element={<Register />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/comments' element={<Comments />} />
-					<Route path='/header' element={<Header />} />
 					<Route path='/logout' element={<Logout />} />
 					<Route path='/people' element={<People />} />
 					{/* <Route path='/post' element={<Post />} /> */}
