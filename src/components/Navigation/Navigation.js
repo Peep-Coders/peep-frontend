@@ -30,7 +30,6 @@ function Navigation(props) {
 					{isLoggedIn ? 'Logout' : 'Login'}
 					<Link to='../Login' className={styles.linktag}>
 						{' '}
-						Login{' '}
 					</Link>
 				</button>
 			</div>

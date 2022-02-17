@@ -1,3 +1,17 @@
 .posts_main {
+    display: flex;
     padding: 20px;
+}
+.mt-3 {
+    border: 0;
+    background-color: red;
+}
+.mt-4 {
+    border: 0;
+    padding: 15px 20%;
+}
+input[name='photo'] {
+    color: transparent;
+    border: 0;
+    width: 100px;
 }
