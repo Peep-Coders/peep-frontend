@@ -7,7 +7,7 @@ import axios from 'axios';
 import styles from './Login.module.css';
 
 function Login({ UserLogout }) {
-	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	
 	const [userLogin, setUserLogin] = useState(null);
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
@@ -79,10 +79,7 @@ function Login({ UserLogout }) {
 						</div>
 						{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
 						<button
-							className={styles.login_button}
-							onClick={() => setIsLoggedIn(true)}>
-							{' '}
-							{isLoggedIn ? 'Logout' : 'Login'}
+							className={styles.login_button}>
 						</button>
 						<p className={styles.login_text}>
 							Don't have an account?&nbsp;
