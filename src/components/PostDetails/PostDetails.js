@@ -1,6 +1,7 @@
 // import { useState, useEffect } from 'react';
 import { Form, Button, Alert, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import API_URL from '../../apiConfig';
+import styles from './PostDetails.modules.css'
 
 const PostDetails = ({
     handleSubmit,
@@ -10,11 +11,11 @@ const PostDetails = ({
     error,
 }) => {
     return (
-        <div>
+        <div className="posts_main">
             <Form onSubmit={handleSubmit} encType='multipart/form-data'>
                 <Form.Group controlId='Description'>
-                    <Form.Label>Post Description</Form.Label>
-                    <Form.Control required autoFocus type='text' name='name'/>
+
+                    <Form.Control required autoFocus type='text' name='name' placeholder="Say Something"/>
                 </Form.Group> 
                 <Form.Group controlId='photo'>
                     <Form.Control
