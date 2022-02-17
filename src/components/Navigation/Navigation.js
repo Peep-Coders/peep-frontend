@@ -12,6 +12,12 @@ function Navigation(props) {
 							Login{' '}
 						</Link>
 					</button>
+					<button className={styles.nav_button} >
+						<Link to='../' className={styles.linktag}>
+							{' '}
+							Home{' '}
+						</Link>
+					</button>
 						<button className={styles.nav_button}>
 						<Link to='../People' className={styles.linktag}>
 							{' '}
