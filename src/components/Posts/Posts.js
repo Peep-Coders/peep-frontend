@@ -29,7 +29,7 @@ useEffect(() => {
 
 
     return (
-			<div className='posts_main'>
+			<div className='posts_secondary'>
 				{posts.map((post) => {
 					return (
 						<div>
