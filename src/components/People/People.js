@@ -5,8 +5,6 @@ import Posts from '../Posts/Posts'
 function People(props) {
     return (
         <div>
-            <PostDetails></PostDetails>
-            <Posts></Posts>
         </div>
     );
 }

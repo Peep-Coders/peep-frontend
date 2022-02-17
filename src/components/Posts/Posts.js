@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import API_URL from '../../apiConfig';
+import { Container, Image, Button } from 'react-bootstrap';
 import styles from './Posts.modules.css'
 
 const Posts = ({ loggedin }) => {
@@ -33,7 +34,8 @@ useEffect(() => {
             return (
                 <div>
                     <h1>Hello {posts[1].post}</h1>
-                    <img className={styles.cartoon_img} src={posts[1].image} alt="cartoon"/>
+                    <Image rounded fluid src={posts[1].image} alt="cartoon"
+                    className={styles.cartoon_img}/>
                 </div>
             );
         })}
