@@ -59,9 +59,6 @@ function Login({ UserLogout }) {
 				<h3 className={styles.login_h3}>Login To Your Account</h3>
 				<div className={styles.login_main}>
 					<form onSubmit={handleSubmit} className={styles.login_form}>
-						<label htmlFor='email' className={styles.form_label}>
-							Email:
-						</label>
 						<input
 							className={styles.login_input}
 							id='email'
@@ -70,33 +67,28 @@ function Login({ UserLogout }) {
 							onChange={handleChange}
 							autoComplete='off'
 						/>
-						<label htmlFor='password' className={styles.form_label}>
-							Password:
-						</label>
 						<div>
 							<input
 								id='password'
-								type='text'
+								type='password'
 								placeholder='password'
 								onChange={handleChange}
 								autoComplete='off'
+								className={styles.password}
 							/>
-							<button
-								type='button'
-								onClick={showPassword}
-								className={styles.eye_button}>
-								<AiFillEye />
-							</button>
 						</div>
 						{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
-						<button className={styles.login_button} onClick={() => setIsLoggedIn(true)} > {isLoggedIn ? 'Logout' : 'Login'}
-							<h4>Login</h4>
+						<button
+							className={styles.login_button}
+							onClick={() => setIsLoggedIn(true)}>
+							{' '}
+							{isLoggedIn ? 'Logout' : 'Login'}
 						</button>
 						<p className={styles.login_text}>
 							Don't have an account?&nbsp;
 							<Link to='/register'>Register</Link>
 							&nbsp;now!
-						</p> 
+						</p>
 					</form>
 				</div>
 			</div>
