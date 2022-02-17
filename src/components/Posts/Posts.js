@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import API_URL from '../../apiConfig';
+import styles from './Posts.modules.css'
 
 const Posts = ({ loggedin }) => {
     const [ posts, setPosts ] = useState([]);
@@ -31,7 +32,8 @@ useEffect(() => {
         {posts.map((post) => {
             return (
                 <div>
-                    <h1>Hello {posts[0].post}</h1>
+                    <h1>Hello {posts[1].post}</h1>
+                    <img className={styles.cartoon_img} src={posts[1].image} alt="cartoon"/>
                 </div>
             );
         })}

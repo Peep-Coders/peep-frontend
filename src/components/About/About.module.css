@@ -7,6 +7,7 @@ body {
 	border-radius: 35%;
 	height: 150px;
 	width: 150px;
+    transition: 1s;
 }
 
 .container_row1 {
@@ -24,7 +25,6 @@ body {
 .img:hover {
     height: 250px;
     width: 250px;
-    transition: 1s;
 }
 
 .github_link {
