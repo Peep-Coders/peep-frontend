@@ -1,13 +1,17 @@
 import React from 'react';
-//Import React Router Dom
-//Import axios or backend interacting part here
+
+import PostDetails from '../PostDetails/PostDetails';
+import Navigation from '../Navigation/Navigation';
+import Posts from '../Posts/Posts';
+import CreatePost from '../CreatePost/CreatePost'
 
 function Home(props) {
+
     return (
         <div>
-            <div className='Home_Container'>
-                <h1 className='Home_Logo_Container'> Pee <span className='Home_Logo_P_Span'>P</span> </h1>
-            </div>
+             <CreatePost></CreatePost>
+            <PostDetails></PostDetails>
+            <Posts></Posts>
         </div>
     );
 }
