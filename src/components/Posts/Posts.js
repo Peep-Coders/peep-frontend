@@ -29,18 +29,23 @@ useEffect(() => {
 
 
     return (
-    <div>
-        {posts.map((post) => {
-            return (
-                <div>
-                    <h1>Hello {posts[1].post}</h1>
-                    <Image rounded fluid src={posts[1].image} alt="cartoon"
-                    className={styles.cartoon_img}/>
-                </div>
-            );
-        })}
-    </div>
-    );
+			<div className='posts_main'>
+				{posts.map((post) => {
+					return (
+						<div>
+							<h1>Hello {posts[1].post}</h1>
+							<Image
+								rounded
+								fluid
+								src={posts[1].image}
+								alt='cartoon'
+								className={styles.cartoon_img}
+							/>
+						</div>
+					);
+				})}
+			</div>
+		);
 };
 
 
