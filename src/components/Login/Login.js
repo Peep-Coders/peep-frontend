@@ -2,37 +2,12 @@ import React, { useState, useContext, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AiFillEye } from 'react-icons/ai';
 import axios from 'axios';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import { UserContext } from '../../context/UserContext';
->>>>>>> 9e9b494 (new pull request)
-=======
-=======
->>>>>>> 8503c5d (Posts view all sample posts)
-=======
-import { UserContext } from '../../context/UserContext';
->>>>>>> 9e316dd (frontend for making post with images)
->>>>>>> 51fe654 (frontend for making post with images)
 
 // Styles
 import styles from './Login.module.css';
 
 function Login(props) {
 	const [userLogin, setUserLogin] = useState(null);
-=======
-// import { UserContext } from '../../context/UserContext';
-// 
-
-function Login(props) {
-	const [userLogin, setUserLogin] = useState(null)
-<<<<<<< HEAD
->>>>>>> 033f51a (display login form)
-=======
->>>>>>> 1c00120 (Posts view all sample posts)
->>>>>>> 8503c5d (Posts view all sample posts)
 	const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
 	const togglePass = useRef(null);
@@ -44,7 +19,6 @@ function Login(props) {
 	});
 	const handleLogin = () => {
 		axios
-<<<<<<< HEAD
 			.post('https://polar-river-02223.herokuapp.com/token/login', user)
 			.then((res) => {
 				if (res.data === 'The provided username or password is incorrect') {
@@ -57,26 +31,7 @@ function Login(props) {
 					});
 				}
 			});
-=======
-		.post('https://polar-river-02223.herokuapp.com/token/login', user)
-		.then((res) => {
-			if (res.data === 'The provided username or password is incorrect') {
-				setErrMessage(res.data);
-			}
-			if (res.data !== 'The provided username or password is incorrect') {
-				setUserLogin((user) => {
-					navigate('/');
-					return { ...user, token: res.data.token }
-				});
-			}
-		});
-<<<<<<< HEAD
->>>>>>> 033f51a (display login form)
-=======
->>>>>>> 1c00120 (Posts view all sample posts)
->>>>>>> 8503c5d (Posts view all sample posts)
 	};
-
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -103,15 +58,20 @@ function Login(props) {
 				<h3 className={styles.login_h3}>Login To Your Account</h3>
 				<div className={styles.login_main}>
 					<form onSubmit={handleSubmit} className={styles.login_form}>
-						<label htmlFor='email' className={styles.form_label}>Email:</label>
+						<label htmlFor='email' className={styles.form_label}>
+							Email:
+						</label>
 						<input
+							className={styles.login_input}
 							id='email'
 							type='email'
 							placeholder='email'
 							onChange={handleChange}
 							autoComplete='off'
 						/>
-						<label htmlFor='password' className={styles.form_label}>Password:</label>
+						<label htmlFor='password' className={styles.form_label}>
+							Password:
+						</label>
 						<div>
 							<input
 								id='password'
@@ -120,7 +80,10 @@ function Login(props) {
 								onChange={handleChange}
 								autoComplete='off'
 							/>
-							<button type='button' onClick={showPassword} className={styles.eye_button}>
+							<button
+								type='button'
+								onClick={showPassword}
+								className={styles.eye_button}>
 								<AiFillEye />
 							</button>
 						</div>
@@ -128,9 +91,11 @@ function Login(props) {
 						<button className={styles.login_button}>
 							<h4>Login</h4>
 						</button>
+						<p className={styles.login_text}>
 							Don't have an account?&nbsp;
 							<Link to='/register'>Register</Link>
 							&nbsp;now!
+						</p> 
 					</form>
 				</div>
 			</div>
