@@ -6,12 +6,8 @@ import axios from 'axios';
 // Styles
 import styles from './Login.module.css';
 
-<<<<<<< HEAD
-function Login({ setLoggedIn }) {
-=======
 function Login({ UserLogout }) {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
->>>>>>> 7088207 (done)
 	const [userLogin, setUserLogin] = useState(null);
 	// const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
