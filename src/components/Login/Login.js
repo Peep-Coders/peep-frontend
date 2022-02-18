@@ -6,7 +6,7 @@ import axios from 'axios';
 // Styles
 import styles from './Login.module.css';
 
-function Login({ UserLogout, handleSetLogin }) {
+function Login({ setLoggedIn }) {
 	const [userLogin, setUserLogin] = useState(null);
 	// const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
@@ -17,6 +17,14 @@ function Login({ UserLogout, handleSetLogin }) {
 		password: '',
 		loggedIn: true,
 	});
+
+		// const handleSetLoggedIn = (token) => {
+		// 	localStorage.setItem('token', token);
+		// 	// getUserInfo();
+		// 	console.log(localStorage.getItem('token'));
+		// 	// setLoggedIn(true);
+		// };
+
 	const handleLogin = () => {
 		// console.log('hello from handlelogin')
 		axios
@@ -26,15 +34,19 @@ function Login({ UserLogout, handleSetLogin }) {
 					setErrMessage(res.data);
 				}
 				if (res.data !== 'The provided username or password is incorrect') {
-					handleSetLogin(res.data.auth_token)
-					setUserLogin((user) => {
-						navigate('/');
-						// localStorage.setItem("token", res.data.auth_token);
-						return { ...user, token: res.data.auth_token };
-					});
+					localStorage.setItem('token', res.data.auth_token);
+					setLoggedIn(true);
+					navigate('/')
+					// setUserLogin((user) => {
+					// 	navigate('/');
+					// 	// localStorage.setItem("token", res.data.auth_token);
+					// 	return { ...user, token: res.data.auth_token };
+					// });
 				}
 			});
 	};
+
+
 
 	const handleSubmit = (event) => {
 		event.preventDefault();

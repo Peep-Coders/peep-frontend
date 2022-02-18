@@ -15,21 +15,21 @@ function App() {
 	const [loggedIn, setLoggedIn] = useState(
 		localStorage.getItem('token') ? true : false
 	);
-	const handleSetLoggedIn = (token) => {
-		localStorage.setItem('token', token);
-		// getUserInfo();
-		console.log(localStorage.getItem('token'));
-		setLoggedIn(true);
-	};
+	// const handleSetLoggedIn = (token) => {
+	// 	localStorage.setItem('token', token);
+	// 	// getUserInfo();
+	// 	console.log(localStorage.getItem('token'));
+	// 	setLoggedIn(true);
+	// };
 	return (
 		<div className='home_container'>
 			<nav>
-				<Navigation setLoggedIn={setLoggedIn}/>
+				<Navigation setLoggedIn={setLoggedIn} loggedIn={loggedIn}/>
 			</nav>
 			<body>
 				<Routes>
-					<Route index path='/' element={<Home />} />
-					<Route path='/login' element={<Login handleSetLoggedIn={handleSetLoggedIn} />} />
+					<Route index path='/' element={<Home loggedIn={loggedIn} />} />
+					<Route path='/login' element={<Login setLoggedIn={setLoggedIn} />} />
 					<Route path='/register' element={<Register />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/comments' element={<Comments />} />
