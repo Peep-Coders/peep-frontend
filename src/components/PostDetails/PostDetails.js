@@ -12,8 +12,8 @@ import styles from './PostDetails.modules.css';
 
 const PostDetails = ({
 	handleSubmit,
-	formData,
-	handleChange,
+	// formData,
+	// handleChange,
 	handleFileUpload,
 	error,
 }) => {
