@@ -11,6 +11,7 @@ const getPostsIndex = async () => {
             const response = await fetch(API_URL + 'peep/');
             if (response.status === 200) {
                 const data = await response.json();
+                // console.log(data[0].username)
                 setPosts(data);
             }
         }
@@ -20,27 +21,44 @@ const getPostsIndex = async () => {
 useEffect(() => {
     getPostsIndex();
 }, []);
-
-
     // for handling the data if none 
     // if (!posts.length) {
     //     return null; 
     // }   
 
+function setTime(){
+    const d = new Date();
+    let text = d.toLocaleTimeString();
+    return text;
+}
+
+function setDate(){
+    const d = new Date();
+    let text2 = d.toLocaleDateString();
+    return text2;
+}
 
     return (
-    <div>
-        {posts.map((post) => {
-            return (
-                <div>
-                    <h1>Hello {posts[1].post}</h1>
-                    <Image rounded fluid src={posts[1].image} alt="cartoon"
-                    className={styles.cartoon_img}/>
-                </div>
-            );
-        })}
-    </div>
-    );
+			<div >
+				{posts.map((post) => {
+					return (
+						<div key={post.id} className='posts_secondary'>
+                            <p className='post_p'>{post.post}</p>    
+                        <img src= 
+                        {post.image} alt="Hello" className='posts_img'
+                        />
+                        <p className='posts_date'>
+                            {setDate(post.date)}
+                            <br/>
+                            {setTime(post.date)}
+                            <br/>
+                            by: {post.username}
+                        </p>
+						</div>      
+					);
+				})}
+			</div>
+		);
 };
 
 

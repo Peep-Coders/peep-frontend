@@ -1,0 +1,39 @@
+.posts_main {
+	display: grid;
+    border-radius: 2px;
+}
+.mt-4 {
+	border: 0;
+	padding: 15px 20%;
+    border-radius: 4px;
+    background-color: rgb(205, 241, 255);
+    border-bottom: 4px solid rgb(219, 219, 219);
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.mt-4:hover {
+    background-color: rgb(177, 206, 219);
+    border-bottom: 4px solid rgb(236, 236, 236);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+input[name='photo'] {
+	color: transparent;
+	border: 0;
+	width: 100px;
+    padding: 40px;
+}
+
+.posts_box {
+    display: flex;
+	width: 100%;
+	height: 60px;
+    font-size: 30px;
+    justify-self: right;
+    align-items: flex-end;
+    margin: 0;
+}
+.file_button {
+    margin: 0 auto;
+}
