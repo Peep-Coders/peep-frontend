@@ -1,34 +1,57 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import PostDetails from '../PostDetails/PostDetails'
+import Posts from '../Posts/Posts'
 import API_URL from '../../apiConfig';
 
 const CreatePost = ({ loggedIn }) => {
-    const [posts, setPosts] = useState([]);
+    const initialPostData = {
+        post: '',
+        image: '',
+    }
+    const [newPost, setNewPost] = useState(initialPostData);
+    const handleChange = (event) => {
+        setNewPost((prevState) => {
+            return {
+                ...prevState, [event.target.id]: event.target.value }; 
+        });
+    };
 
-    const getPostsIndex = async () => {
+    const handleFileUpload = (event) => {
+        setNewPost((prevState) => {
+            return {
+                ...prevState, [event.target.id]: event.target.value 
+            };
+        });
+    }
+
+    
+
+    const createPost = async (event) => {
+        event.preventDefault();
+        const data = new FormData(event.target);
         try {
-            const response = await fetch(API_URL + 'peep/');
-            if (response.status === 200) {
-                const data = await response.json();
-                console.log(data);
-                setPosts(data);
-            }
-        } catch (error) {}
+            const response = await fetch(API_URL + 'peep/', {
+                method: 'POST',
+                body: data,
+                headers: {
+                Authorization: `Token ${localStorage.getItem('token')}`
+                }
+            });
+        } catch (error) {
+            console.log(error)
+        }
     }
-
-    useEffect(() => {
-        getPostsIndex();
-    }, []);
-
-    if (!posts.length) {
-        return null; 
-    }
-
-    return (
-       <div>
-           <h1>Post</h1>
-       </div>
-    )
-
-}
-
-export default CreatePost
+    
+        return (
+        <div>
+            <PostDetails
+            handleSubmit={createPost}
+            handleChange={handleChange}
+            handleFileUpload={handleFileUpload}
+            formData={newPost}
+           />
+           <Posts></Posts>
+        </div>
+        )
+};
+export default CreatePost;
