@@ -6,8 +6,8 @@
     grid-template-columns: .1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr .5fr .5fr .1fr;
     height: 300px;
-    border-bottom: 4px solid rgb(216, 198, 120);
-    border-right: 4px solid rgb(216, 198, 120);
+    border-bottom: 6px solid rgb(216, 198, 120);
+    border-right: 5px solid rgb(216, 198, 120);
     border-radius: 4px;
     transition: 2s;
 }
