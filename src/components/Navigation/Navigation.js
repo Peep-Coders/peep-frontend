@@ -3,10 +3,11 @@ import { Link,  } from 'react-router-dom';
 import styles from './Navigation.module.css';
 import API_URL from '../../apiConfig';
 
-function Navigation({setLoggedIn}) {
+function Navigation({setLoggedIn, loggedIn}, props) {
 
 	const handleLogout = async () => {
-		console.log(localStorage.getItem('token'));
+		// console.log(localStorage.getItem('token'));
+		// console.log(props)
 		try {
 			const response = await fetch(API_URL + 'token/logout/', {
 				method: 'POST',
@@ -15,10 +16,11 @@ function Navigation({setLoggedIn}) {
 				},
 			});
 			if (response.status === 204) {
-				alert('You have been logged out!');
+				// alert('You have been logged out!');
 				setLoggedIn(false);
 				// setUserInfo(null);
 				localStorage.removeItem('token');
+				
 			}
 		} catch (err) {
 			console.log(err);
@@ -39,13 +41,23 @@ function Navigation({setLoggedIn}) {
 						About
 					</Link>
 				</button>
-				<button
-					className={styles.nav_button}>
-					<Link to='../Login' className={styles.linktag}>
-						Login
-					</Link>
-				</button>
-				<button onClick={handleLogout}>Logout</button>
+				{loggedIn ? (
+					<>
+						{/* LOG OUT BUTTON */}
+						<button onClick={handleLogout} className={styles.nav_button}>
+							Logout
+						</button>
+					</>
+				) : (
+					<>
+						{/* LOG IN BUTTON */}
+						<button className={styles.nav_button}>
+							<Link to='../Login' className={styles.linktag}>
+								Login
+							</Link>
+						</button>
+					</>
+				)}
 			</div>
 		</div>
 	);
