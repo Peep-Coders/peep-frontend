@@ -3,10 +3,14 @@
 	margin: 0 auto;
 	display: block;
 	border-radius: 2px;
-	border: 4px solid gainsboro;
+	border-left: 4px solid rgb(189, 173, 105);
+	border-top: 4px solid rgb(189, 173, 105);
+	border-bottom: 4px solid rgb(214, 197, 121);
+
+
 }
 .postDetails_container {
-	border-bottom: 4px solid rgb(112, 112, 112);
+	/* border-bottom: 4px solid rgb(112, 112, 112); */
 	margin: 10px 60px;
 	border-radius: 2px;
 }
