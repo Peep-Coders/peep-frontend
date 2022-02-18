@@ -1,7 +1,7 @@
 .start_grid {
 	transition: 2s;
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 0.5fr 1fr 0.5fr;
 }
 .login_h3 {
