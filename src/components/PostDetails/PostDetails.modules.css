@@ -5,7 +5,7 @@
 .mt-4.btn.btn-primary {
     display: block;
 	border: 0;
-	padding: 15px 45%;
+	padding-left: 95%;
 	border-radius: 4px;
 	background-color: rgb(142, 238, 255);
 	border-bottom: 4px solid rgb(216, 198, 120);
@@ -37,6 +37,7 @@ input[name='photo'] {
 }
 #post.posts_box.form-control {
     display: flex;
+    margin-top: 2%;
 	background-color: rgb(247, 232, 149);
 	border-bottom: 4px solid rgb(216, 198, 120);
 	border-right: 4px solid rgb(216, 198, 120);
@@ -52,9 +53,8 @@ input[name='photo'] {
 	border: 2px solid gainsboro;
 }
 #image.file_button.form-control {
-	color: transparent;
-	background-color: rgb(247, 232, 149);
 	border: 0;
+    margin-top: 5px;
 	border-radius: 4px;
     width: 105px;
 }
