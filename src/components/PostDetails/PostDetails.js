@@ -40,7 +40,7 @@ const PostDetails = ({
 					/>
 				</Form.Group>
 				<Button className='mt-4' type='submit' disabled={error}>
-					Post
+					<h4>Post</h4>
 				</Button>
 				{error && <Alert variant='danger'>Error, Try again!</Alert>}
 			</Form>
