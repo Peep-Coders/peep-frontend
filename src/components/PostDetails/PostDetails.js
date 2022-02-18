@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import {
-	Form,
-	Button,
-	Alert,
-	FormGroup,
-	FormControl,
-	ControlLabel,
-} from 'react-bootstrap';
+// import {
+// 	Form,
+// 	Button,
+// 	Alert,
+// 	FormGroup,
+// 	FormControl,
+// 	ControlLabel,
+// } from 'react-bootstrap';
+import {Form, Button, Alert, FormGroup} from 'react-bootstrap'
 import API_URL from '../../apiConfig';
 import styles from './PostDetails.modules.css';
 import { Navigate, useNavigate } from 'react-router-dom';
@@ -85,13 +86,14 @@ const PostDetails = ({
 					/>
 				</Form.Group>
 				<Form.Group controlId='image'>
-					<Form.Control
+						<Form.Control
 						className='file_button'
 						type='file'
 						name='image'
 						accept='image/*'
 						onChange={handleFileUpload}
-					/>
+						/>
+
 				</Form.Group>
 				<Button className='mt-4' type='submit' disabled={error}>
 					<h4>Post</h4>
