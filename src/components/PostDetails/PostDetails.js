@@ -24,6 +24,7 @@ const PostDetails = ({
 					<Form.Control
 						required
 						autoFocus
+						className='posts_box'
 						type='text'
 						name='name'
 						placeholder='Say Something'
@@ -31,12 +32,12 @@ const PostDetails = ({
 				</Form.Group>
 				<Form.Group controlId='photo'>
 					<Form.Control
-                        className='file_button'
+						className='file_button'
 						type='file'
 						name='photo'
 						accept='image/*'
 						onChange={handleFileUpload}
-                        />
+					/>
 				</Form.Group>
 				<Button className='mt-4' type='submit' disabled={error}>
 					Post

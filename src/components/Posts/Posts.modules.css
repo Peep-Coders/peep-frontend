@@ -1,3 +1,15 @@
 .posts_secondary {
+    display: flex;
     padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(247, 247, 247);
+}
+.post_p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 20px 0;
+}
+.posts_img{
+    max-width: 25%;
+    margin-bottom: 15px;
+    align-content: left;
 }

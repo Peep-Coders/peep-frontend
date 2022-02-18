@@ -29,17 +29,17 @@ useEffect(() => {
 
 
     return (
-			<div className='posts_secondary'>
+			<div >
 				{posts.map((post) => {
 					return (
-						<div>
-							<h1>Hello {posts[1].post}</h1>
+						<div className='posts_secondary'>
+							<p className='post_p'>{posts[1].post}</p>
 							<Image
 								rounded
 								fluid
 								src={posts[1].image}
 								alt='cartoon'
-								className={styles.cartoon_img}
+								className='posts_img'
 							/>
 						</div>
 					);
