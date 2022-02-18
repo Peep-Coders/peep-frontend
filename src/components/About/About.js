@@ -3,7 +3,7 @@ import styles from './About.module.css'
 
 function About(props) {
     return (
-			<>
+			<div className={styles.about_body}>
 				<div className={styles.container_row1}>
 					<a
 						href='http://www.linkedin.com/in/andrew-kal'
@@ -96,7 +96,7 @@ function About(props) {
 						/>
 					</a>
 				</div>
-			</>
+			</div>
 		);
 }
 
