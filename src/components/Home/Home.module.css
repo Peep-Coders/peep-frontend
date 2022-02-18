@@ -9,8 +9,10 @@
 	border-bottom: 4px solid gainsboro;
 	margin: 10px 60px;
 }
-.posts_containter {
-	border: 1px solid green;
+.posts_container {
+	margin: 10px;
+    padding: 10px;
+
 }
 input[type='text'] {
 	border: 0;
