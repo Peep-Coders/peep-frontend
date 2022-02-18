@@ -9,17 +9,27 @@ import Navigation from './components/Navigation/Navigation';
 import Register from './components/Register/Register';
 import Posts from './components/Posts/Posts'; 
 import PostDetails from './components/PostDetails/PostDetails';
+import { useState } from 'react'
 
 function App() {
+	const [loggedIn, setLoggedIn] = useState(
+		localStorage.getItem('token') ? true : false
+	);
+	const handleSetLoggedIn = (token) => {
+		localStorage.setItem('token', token);
+		// getUserInfo();
+		console.log(localStorage.getItem('token'));
+		setLoggedIn(true);
+	};
 	return (
 		<div className='home_container'>
 			<nav>
-				<Navigation />
+				<Navigation setLoggedIn={setLoggedIn}/>
 			</nav>
 			<body>
 				<Routes>
 					<Route index path='/' element={<Home />} />
-					<Route path='/login' element={<Login />} />
+					<Route path='/login' element={<Login handleSetLoggedIn={handleSetLoggedIn} />} />
 					<Route path='/register' element={<Register />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/comments' element={<Comments />} />

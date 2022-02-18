@@ -26,17 +26,18 @@ const CreatePost = ({ loggedIn }) => {
 
     
 
-    const createPost = async (event) => {
+    const newPost = async (event) => {
+        console.log('inside create post')
         event.preventDefault();
         const data = new FormData(event.target);
         try {
             const response = await fetch(API_URL + 'peep/', {
-                method: 'POST',
-                body: data,
-                headers: {
-                Authorization: `Token ${localStorage.getItem('token')}`
-                }
-            });
+							method: 'POST',
+							body: data,
+							headers: {
+								Authorization: `Token 946799bba8dba6944bac1d0f3d278fe9d27c5945`,
+							},
+						});
         } catch (error) {
             console.log(error)
         }
@@ -45,7 +46,7 @@ const CreatePost = ({ loggedIn }) => {
         return (
         <div>
             <PostDetails
-            handleSubmit={createPost}
+            newPost={newPost}
             handleChange={handleChange}
             handleFileUpload={handleFileUpload}
             formData={newPost}

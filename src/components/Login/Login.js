@@ -6,11 +6,11 @@ import axios from 'axios';
 // Styles
 import styles from './Login.module.css';
 
-function Login({ UserLogout }) {
+function Login({ UserLogout, handleSetLogin }) {
 	const [userLogin, setUserLogin] = useState(null);
-	const [showPass, setShowpass] = useState(false);
+	// const [showPass, setShowpass] = useState(false);
 	const [errMessage, setErrMessage] = useState(null);
-	const togglePass = useRef(null);
+	// const togglePass = useRef(null);
 	const navigate = useNavigate();
 	const [user, setUser] = useState({
 		email: '',
@@ -18,6 +18,7 @@ function Login({ UserLogout }) {
 		loggedIn: true,
 	});
 	const handleLogin = () => {
+		// console.log('hello from handlelogin')
 		axios
 			.post('https://polar-river-02223.herokuapp.com/token/login', user)
 			.then((res) => {
@@ -25,9 +26,10 @@ function Login({ UserLogout }) {
 					setErrMessage(res.data);
 				}
 				if (res.data !== 'The provided username or password is incorrect') {
+					handleSetLogin(res.data.auth_token)
 					setUserLogin((user) => {
 						navigate('/');
-						localStorage.setItem("token", res.data.auth_token);
+						// localStorage.setItem("token", res.data.auth_token);
 						return { ...user, token: res.data.auth_token };
 					});
 				}
@@ -43,15 +45,15 @@ function Login({ UserLogout }) {
 		setUser({ ...user, [event.target.id]: event.target.value });
 	};
 
-	const showPassword = () => {
-		if (showPass) {
-			togglePass.current.attributes['1'].value = 'text';
-		}
-		if (!showPass) {
-			togglePass.current.attributes['1'].value = 'password';
-		}
-		setShowpass(!showPass);
-	};
+	// const showPassword = () => {
+	// 	if (showPass) {
+	// 		togglePass.current.attributes['1'].value = 'text';
+	// 	}
+	// 	if (!showPass) {
+	// 		togglePass.current.attributes['1'].value = 'password';
+	// 	}
+	// 	setShowpass(!showPass);
+	// };
 
 	return (
 		<div className={styles.start_grid}>
