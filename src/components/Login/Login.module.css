@@ -71,3 +71,6 @@ input[type='email'] {
 input:focus{
     outline: none;
 }
+input[type='file_button']{
+	background-color: red;
+}
