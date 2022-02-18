@@ -32,6 +32,7 @@ input[name='photo'] {
 	width: 100px;
     padding: 40px;
 }
+
 .posts_box {
 	border: 1px solid blue;
 	width: 100%;
