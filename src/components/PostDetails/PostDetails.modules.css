@@ -1,5 +1,5 @@
 .posts_main {
-	/* display: grid; */
+	display: inline;
 	padding: 20px;
 	align-items: right;
 	/* grid-template-columns: 1fr 1fr;
@@ -10,13 +10,27 @@
 	background-color: red;
 }
 .mt-4 {
+    display: flex;
 	border: 0;
 	padding: 15px 20%;
+    border-radius: 4px;
+    background-color: rgb(205, 241, 255);
+    border-bottom: 4px solid rgb(219, 219, 219);
+    align-self: right;
+    justify-self: flex-end;
+}
+.mt-4:hover {
+    background-color: rgb(177, 206, 219);
+    border-bottom: 4px solid rgb(236, 236, 236);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
 }
 input[name='photo'] {
 	color: transparent;
 	border: 0;
 	width: 100px;
+    padding: 40px;
 }
 .posts_box {
 	border: 1px solid blue;
