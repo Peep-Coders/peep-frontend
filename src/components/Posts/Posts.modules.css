@@ -6,7 +6,7 @@
     grid-template-columns: .1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr .5fr .5fr;
     max-height: 200px;
-    border-bottom: 2px solid black;
+    border-bottom: 4px solid black;
     border-radius: 4px;
 }
 .posts_img{

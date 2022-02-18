@@ -98,7 +98,7 @@ function Register(props) {
 								className={styles.password}
 								type='password'
 								value={registered.re_password}
-								placeholder='re_password'
+								placeholder='re-enter password'
 								onChange={handleChange}
 								autoComplete='off'
 							/>
@@ -112,7 +112,7 @@ function Register(props) {
 						<button type='submit' className={styles.login_button}>
 							<h4>Register</h4>
 						</button>
-						<p>
+						<p className={styles.login_text}>
 							Already have an account?&nbsp;
 							<Link to='/login'>Login</Link>
 							&nbsp;now!
