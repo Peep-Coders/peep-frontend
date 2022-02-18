@@ -3,7 +3,7 @@ import { Link,  } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
 function Navigation(props) {
-	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	
 	return (
 		<div className={styles.nav_bar}>
 			<div className={styles.btnContainer}>
@@ -25,11 +25,9 @@ function Navigation(props) {
 					</Link>
 				</button>
 				<button
-					className={styles.nav_button}
-					onClick={() => setIsLoggedIn(true)}>
-					{isLoggedIn ? 'Logout' : 'Login'}
+					className={styles.nav_button}>
 					<Link to='../Login' className={styles.linktag}>
-						{' '}
+						Login
 					</Link>
 				</button>
 			</div>

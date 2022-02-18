@@ -52,7 +52,7 @@ function About(props) {
                 <div className={styles.container_title}>
                  <h1>Michel Pathinvo</h1>
               <p>
-                  Hi my name is Michel Pathinvo, I'm a Full Stack Developer! <br></br> In this Twitter clone project (PeeP) I worked on the Full Stack. <br></br> I used: HTML5, CSS3, JavaScript, REACT Native, Python3, Django. 
+                  Hi my name is Michel Pathinvo, I'm a Full-Stack Developer! <br></br> In this Twitter clone project (PeeP) I worked on the Full-Stack. <br></br> I used: HTML5, CSS3, JavaScript, REACT Native, Python3, Django. 
               </p>
               </div>
                 <a 
