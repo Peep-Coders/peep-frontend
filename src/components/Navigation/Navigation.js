@@ -2,8 +2,11 @@ import React , {useState} from 'react';
 import { Link,  } from 'react-router-dom';
 import styles from './Navigation.module.css';
 import API_URL from '../../apiConfig';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function Navigation({setLoggedIn, loggedIn}, props) {
+
+	const navigate = useNavigate();
 
 	const handleLogout = async () => {
 		// console.log(localStorage.getItem('token'));
@@ -20,6 +23,7 @@ function Navigation({setLoggedIn, loggedIn}, props) {
 				setLoggedIn(false);
 				// setUserInfo(null);
 				localStorage.removeItem('token');
+				navigate('/about');
 				
 			}
 		} catch (err) {
