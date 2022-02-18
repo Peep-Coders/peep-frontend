@@ -7,7 +7,7 @@ function Footer(props) {
 =======
 >>>>>>> 009a50f (Fixed Folders)
 	return (
-		<div className={styles.footerContainer}>
+		<div className={styles.footer_container}>
 			<span> PEEP &copy; | Created by PeepTeam </span>
 		</div>
 	);

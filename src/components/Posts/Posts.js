@@ -48,7 +48,7 @@ function setDate(){
                         />
                         <p className='posts_date'>
                             {setDate(post.date)}
-                            <br></br>
+                            <br/>
                             {setTime(post.date)}
                         </p>
 						</div>      
