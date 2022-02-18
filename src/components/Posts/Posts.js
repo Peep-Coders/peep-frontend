@@ -53,8 +53,8 @@ useEffect(() => {
                             {/* {new Date().toLocaleTimeString(post)} */}
                             {/* <br/> */}
                             {/* post.date */}
-                            @{post.username}
                         </p>
+                            <p className='posts_username'>@{post.username}</p>
 						</div>
 					);
 				})}
