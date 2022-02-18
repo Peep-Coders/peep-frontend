@@ -2,7 +2,6 @@ import React from 'react';
 
 import PostDetails from '../PostDetails/PostDetails';
 import Posts from '../Posts/Posts';
-import CreatePost from '../CreatePost/CreatePost';
 import styles from './Home.module.css';
 
 function Home(props) {
