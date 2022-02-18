@@ -20,28 +20,38 @@ const getPostsIndex = async () => {
 useEffect(() => {
     getPostsIndex();
 }, []);
-
-
     // for handling the data if none 
     // if (!posts.length) {
     //     return null; 
     // }   
 
+function setTime(){
+    const d = new Date();
+    let text = d.toLocaleTimeString();
+    return text;
+}
+
+function setDate(){
+    const d = new Date();
+    let text2 = d.toLocaleDateString();
+    return text2;
+}
 
     return (
 			<div >
 				{posts.map((post) => {
 					return (
-						<div className='posts_secondary'>
-							<p className='post_p'>{posts[1].post}</p>
-							<Image
-								rounded
-								fluid
-								src={posts[1].image}
-								alt='cartoon'
-								className='posts_img'
-							/>
-						</div>
+						<div key={post.id}>
+                            <p>{post.post}</p>    
+                        <img src= 
+                        {post.image} alt="Hello"
+                        />
+                        <p>
+                            {setDate(post.date)}
+                            <br></br>
+                            {setTime(post.date)}
+                        </p>
+						</div>      
 					);
 				})}
 			</div>

@@ -28,7 +28,8 @@ function Login({ UserLogout }) {
 				if (res.data !== 'The provided username or password is incorrect') {
 					setUserLogin((user) => {
 						navigate('/');
-						return { ...user, token: res.data.token };
+						localStorage.setItem("token", res.data.auth_token);
+						return { ...user, token: res.data.auth_token };
 					});
 				}
 			});
