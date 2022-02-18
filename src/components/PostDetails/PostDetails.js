@@ -86,14 +86,13 @@ const PostDetails = ({
 					/>
 				</Form.Group>
 				<Form.Group controlId='image'>
-						<Form.Control
+					<Form.Control
 						className='file_button'
 						type='file'
 						name='image'
 						accept='image/*'
 						onChange={handleFileUpload}
-						/>
-
+					/>
 				</Form.Group>
 				<Button className='mt-4' type='submit' disabled={error}>
 					<h4>Post</h4>

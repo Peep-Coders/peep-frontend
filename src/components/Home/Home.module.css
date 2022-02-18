@@ -1,13 +1,14 @@
 .home_main {
-	background-color: white;
+	background-color: rgb(247, 232, 149);
 	margin: 0 auto;
 	display: block;
 	border-radius: 2px;
 	border: 4px solid gainsboro;
 }
 .postDetails_container {
-	border-bottom: 4px solid gainsboro;
+	border-bottom: 4px solid rgb(112, 112, 112);
 	margin: 10px 60px;
+	border-radius: 2px;
 }
 .posts_container {
 	margin: 10px;
