@@ -41,12 +41,12 @@ function setDate(){
 			<div >
 				{posts.map((post) => {
 					return (
-						<div key={post.id}>
-                            <p>{post.post}</p>    
+						<div key={post.id} className='posts_secondary'>
+                            <p className='post_p'>{post.post}</p>    
                         <img src= 
-                        {post.image} alt="Hello"
+                        {post.image} alt="Hello" className='posts_img'
                         />
-                        <p>
+                        <p className='posts_date'>
                             {setDate(post.date)}
                             <br></br>
                             {setTime(post.date)}
