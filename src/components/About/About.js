@@ -37,7 +37,7 @@ function About(props) {
 					<div className={styles.container_title}>
 						<h1 className={styles.about_h1}>Matthew Brockus</h1>
 						<p className={styles.about_p}>
-							Hi my name is Matthew Brockus, I'm a Back End Developer! <br></br>{' '}
+							Hi my name is Matthew Brockus, I'm a Full-Stack Developer! <br></br>{' '}
 							In this Twitter clone project (PeeP) I primarily worked on the
 							Back End. <br></br> For this project I utilized Python3 and
 							Django!
