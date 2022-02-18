@@ -80,7 +80,7 @@ function Login({ UserLogout }) {
 						{errMessage ? <p className={styles.errMsg}>{errMessage}</p> : ''}
 						<button
 							className={styles.login_button}>
-						</button>
+						<h4>Login</h4></button>
 						<p className={styles.login_text}>
 							Don't have an account?&nbsp;
 							<Link to='/register'>Register</Link>

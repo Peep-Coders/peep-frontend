@@ -1,12 +1,7 @@
-* {
-    margin: 0 auto;
-}
-
 .home_container{
     display: grid;
-    gap: 20px;
-    grid-template-rows: .01fr 1fr .1fr;
-    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: .01fr 1fr .01fr;
+    grid-template-columns: .1fr 1fr 1fr;
 
     }
 nav {
@@ -17,10 +12,13 @@ nav {
 body {
     grid-row: 2 / span 1;
     grid-column: 2 /span 2;
+    margin: 0 auto;
     /* border: 2px solid red; */
 }
 footer {
-    grid-row: 3;
+    grid-row: 3 / span 1;
     grid-column: 1/ span 3;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
 }
