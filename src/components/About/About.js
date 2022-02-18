@@ -21,7 +21,7 @@ function About(props) {
 							Hi my name is Andrew Kal, I'm a Front End Developer! <br></br> In
 							this Twitter clone project (PeeP) I primarily worked on the Front
 							End. <br></br> For this project I utilized HTML5, CSS3,
-							JavaScript, REACT Native.
+							JavaScript, REACT.
 						</p>
 					</div>
 					<a
@@ -61,7 +61,7 @@ function About(props) {
 							Hi my name is Michel Pathinvo, I'm a Full-Stack Developer!{' '}
 							<br></br> In this Twitter clone project (PeeP) I worked on the
 							Full-Stack. <br></br> I used: HTML5, CSS3, JavaScript, REACT
-							Native, Python3, Django.
+						, Python3, Django.
 						</p>
 					</div>
 					<a
@@ -80,7 +80,7 @@ function About(props) {
 							Hi my name is David Gales, I'm a Front End Developer! <br></br> In
 							this Twitter clone project (PeeP) I primarily worked on the Front
 							End. <br></br> For this project I utilized HTML5, CSS3,
-							JavaScript, REACT Native.
+							JavaScript, REACT.
 						</p>
 					</div>
 				</div>

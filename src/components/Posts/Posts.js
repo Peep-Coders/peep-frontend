@@ -48,12 +48,14 @@ useEffect(() => {
                         {post.image} alt="Hello" className='posts_img'
                         />
                         <p className='posts_date'>
-                            {post.date}
+                            posted on: {new Date().toLocaleDateString()}
                             <br/>
-
+                            {/* {new Date().toLocaleTimeString(post)} */}
+                            {/* <br/> */}
+                            {/* post.date */}
                             by: {post.username}
                         </p>
-						</div>      
+						</div>
 					);
 				})}
 			</div>
