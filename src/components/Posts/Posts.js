@@ -26,17 +26,17 @@ useEffect(() => {
     //     return null; 
     // }   
 
-function setTime(){
-    const d = new Date();
-    let text = d.toLocaleTimeString();
-    return text;
-}
+// function setTime(){
+//     const d = new Date();
+//     let text = d.toLocaleTimeString();
+//     return text;
+// }
 
-function setDate(){
-    const d = new Date();
-    let text2 = d.toLocaleDateString();
-    return text2;
-}
+// function setDate(){
+//     const d = new Date();
+//     let text2 = d.toLocaleDateString();
+//     return text2;
+// }
 
     return (
 			<div >
@@ -48,10 +48,9 @@ function setDate(){
                         {post.image} alt="Hello" className='posts_img'
                         />
                         <p className='posts_date'>
-                            {setDate(post.date)}
+                            {post.date}
                             <br/>
-                            {setTime(post.date)}
-                            <br/>
+
                             by: {post.username}
                         </p>
 						</div>      
