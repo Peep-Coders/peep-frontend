@@ -11,6 +11,7 @@ const getPostsIndex = async () => {
             const response = await fetch(API_URL + 'peep/');
             if (response.status === 200) {
                 const data = await response.json();
+                // console.log(data[0].username)
                 setPosts(data);
             }
         }
@@ -50,6 +51,8 @@ function setDate(){
                             {setDate(post.date)}
                             <br/>
                             {setTime(post.date)}
+                            <br/>
+                            by: {post.username}
                         </p>
 						</div>      
 					);
