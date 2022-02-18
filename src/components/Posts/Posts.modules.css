@@ -9,6 +9,7 @@
     border-bottom: 4px solid rgb(216, 198, 120);
     border-right: 4px solid rgb(216, 198, 120);
     border-radius: 4px;
+    transition: 2s;
 }
 .posts_img{
     /* min-width: 50%;
