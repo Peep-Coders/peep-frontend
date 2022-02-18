@@ -5,7 +5,6 @@ import Comments from './components/Comments/Comments';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
-import Logout from './components/Logout/Logout';
 import Navigation from './components/Navigation/Navigation';
 import People from './components/People/People';
 import Register from './components/Register/Register';
@@ -25,7 +24,6 @@ function App() {
 					<Route path='/register' element={<Register />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/comments' element={<Comments />} />
-					<Route path='/logout' element={<Logout />} />
 					<Route path='/people' element={<People />} />
 					<Route path='/post' element={<Posts />} />
 					<Route path='/postDetails' element={<PostDetails />} />
