@@ -36,12 +36,16 @@ input[name='photo'] {
 	margin: 0;
 }
 #post.posts_box.form-control {
+    display: flex;
 	background-color: rgb(247, 232, 149);
-	border-bottom: 2px solid gainsboro;
+	border-bottom: 4px solid rgb(216, 198, 120);
+	border-right: 4px solid rgb(216, 198, 120);
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 33px;
 	padding: 30px;
 	height: 20%;
+    justify-self: right;
+    align-self: flex-end;
 }
 #post.posts_box.form-control:focus {
 	border: 0;
