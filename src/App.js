@@ -10,6 +10,7 @@ import Register from './components/Register/Register';
 import Posts from './components/Posts/Posts'; 
 import PostDetails from './components/PostDetails/PostDetails';
 import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	const [loggedIn, setLoggedIn] = useState(
