@@ -5,10 +5,11 @@
     background-color: rgb(247, 247, 247);
     grid-template-columns: .1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr .5fr .5fr;
-    max-height: 200px;
+    height: 300px;
     border-bottom: 4px solid rgb(216, 198, 120);
     border-right: 4px solid rgb(216, 198, 120);
     border-radius: 4px;
+    transition: 2s;
 }
 
 .posts_img{
@@ -23,7 +24,12 @@
     border-bottom: 4px solid rgb(224, 224, 224);
     border-right: 4px solid rgb(224, 224, 224);
     border-radius: 4px;
+    transition: 2000ms;
 
+}
+.posts_img:hover {
+    max-height: 300px;
+    max-width: 300px;
 }
 .post_p {
     display: inline;
