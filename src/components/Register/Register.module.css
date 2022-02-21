@@ -78,3 +78,16 @@ input[type='text'] {
 	border: 0;
 	border-bottom: 2px solid gainsboro;
 }
+@media (max-width: 500px) {
+	.start_grid {
+		padding: 0;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 0.1fr 1fr 0.1fr;
+		grid-template-rows: .5fr 1fr 0.1fr;
+	}
+	.login {
+		padding: 40px;
+		margin: 0 auto;
+	}
+}
