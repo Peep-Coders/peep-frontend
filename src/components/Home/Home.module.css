@@ -21,7 +21,6 @@
 }
 input[type='text'] {
 	border: 0;
-	/* border-bottom: 2px solid gainsboro; */
 }
 input:focus{
     outline: none;

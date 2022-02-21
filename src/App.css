@@ -2,6 +2,8 @@
     display: grid;
     grid-template-rows: .01fr 1fr .01fr;
     grid-template-columns: .1fr 1fr 1fr .1fr;
+    margin-bottom: 0;
+    padding-bottom: 0;
 
     }
 nav {
@@ -17,10 +19,13 @@ body {
 }
 footer {
     grid-row: 3 / span 1;
-    grid-column: 1/ span 4;
-    /* border: 1px solid red; */
+    grid-column: 2/ span 3;
+    background-color: rgb(151, 151, 151);
+    border-radius: 0 0 0 2px;
     display: flex;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
+    height: 15px;
+    margin-left: 15px;
 }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import API_URL from '../../apiConfig';
-import { Container, Image, Button } from 'react-bootstrap';
 import styles from './Posts.modules.css'
 
 const Posts = ({ loggedin }) => {
@@ -21,22 +20,6 @@ const getPostsIndex = async () => {
 useEffect(() => {
     getPostsIndex();
 }, []);
-    // for handling the data if none 
-    // if (!posts.length) {
-    //     return null; 
-    // }   
-
-// function setTime(){
-//     const d = new Date();
-//     let text = d.toLocaleTimeString();
-//     return text;
-// }
-
-// function setDate(){
-//     const d = new Date();
-//     let text2 = d.toLocaleDateString();
-//     return text2;
-// }
 
     return (
 			<div >
@@ -50,9 +33,6 @@ useEffect(() => {
                         <p className='posts_date'>
                             {new Date().toLocaleDateString()}
                             <br/>
-                            {/* {new Date().toLocaleTimeString(post)} */}
-                            {/* <br/> */}
-                            {/* post.date */}
                         </p>
                             <p className='posts_username'>@{post.username}</p>
 						</div>
