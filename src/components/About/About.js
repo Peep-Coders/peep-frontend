@@ -18,10 +18,8 @@ function About(props) {
 					<div className={styles.container_title}>
 						<h1 className={styles.about_h1}>Andrew Kal</h1>
 						<p className={styles.about_p}>
-							Hi my name is Andrew Kal, I'm a Front End Developer! <br></br> In
-							this Twitter clone project (PeeP) I primarily worked on the Front
-							End. <br></br> For this project I utilized HTML5, CSS3,
-							JavaScript, REACT.
+							Hi my name is Andrew Kal, I'm a Full-Stack Developer! <br></br> For this project I utilized HTML5, CSS3,
+							JavaScript, React.js, Python3, Django.  
 						</p>
 					</div>
 					<a
@@ -38,7 +36,7 @@ function About(props) {
 						<h1 className={styles.about_h1}>Matthew Brockus</h1>
 						<p className={styles.about_p}>
 							Hi my name is Matthew Brockus, I'm a Full-Stack Developer! <br></br>{' '}
-							In this Twitter clone project (PeeP) I primarily worked on the
+							In this Twitter clone project (PeeeP) I primarily worked on the
 							Back End. <br></br> For this project I utilized Python3 and
 							Django!
 						</p>
@@ -59,8 +57,8 @@ function About(props) {
 						<h1 className={styles.about_h1}>Michel Pathinvo</h1>
 						<p className={styles.about_p}>
 							Hi my name is Michel Pathinvo, I'm a Full-Stack Developer!{' '}
-							<br></br> In this Twitter clone project (PeeP) I worked on the
-							Full-Stack. <br></br> I used: HTML5, CSS3, JavaScript, REACT
+							<br></br> In this Twitter clone project (PeeeP) I worked on the
+							Full-Stack. <br></br> I used: HTML5, CSS3, JavaScript, React.js
 						, Python3, Django.
 						</p>
 					</div>
@@ -78,9 +76,9 @@ function About(props) {
 						<h1 className={styles.about_h1}>David Gales</h1>
 						<p className={styles.about_p}>
 							Hi my name is David Gales, I'm a Front End Developer! <br></br> In
-							this Twitter clone project (PeeP) I primarily worked on the Front
+							this Twitter clone project (PeeeP) I primarily worked on the Front
 							End. <br></br> For this project I utilized HTML5, CSS3,
-							JavaScript, REACT.
+							JavaScript, React.js.
 						</p>
 					</div>
 				</div>
