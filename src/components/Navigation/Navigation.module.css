@@ -1,4 +1,4 @@
-.nav_button {
+/* .nav_button {
     background-color: rgb(82, 43, 224);
     border: 0;
     margin-left: 10px;
@@ -9,13 +9,13 @@
     padding: 20px 20px;
     justify-content: flex-end;
     align-items: flex-end;
-}
+} */
 
-.nav_button:hover {
+/* .nav_button:hover {
     background-color: rgb(82, 43, 224);
     transition: .25s;
     border-bottom: 4px solid rgb(226, 226, 226);
-}
+} */
 
 .nav_bar {
     display: flex;
@@ -30,8 +30,4 @@
 .linktag {
     text-decoration: none;
     color: whitesmoke;
-}
-
-#search {
-    margin-left: 12px;
 }

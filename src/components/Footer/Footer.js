@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 function Footer(props) {
 	return (
 		<div className={styles.footer_container}>
-			<span> PEEP &copy; | Created by PeepTeam </span>
+			<span> PEEEP &copy; | Created by PeeepTeam </span>
 		</div>
 	);
 }
